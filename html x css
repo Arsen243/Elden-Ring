@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring - Темний світ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Загальні стилі */
+        body {
+            background: url('https://image.api.playstation.com/vulcan/ap/rnd/202107/1612/QFsbd7SeGRvRaVnVJ3E5j63C.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #d4af37; /* Золотий колір тексту */
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        h1 {
+            font-size: 4em;
+            text-shadow: 4px 4px 10px black;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border: 2px solid #d4af37;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        /* Галерея персонажів */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .character {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border: 2px solid #d4af37;
+            border-radius: 10px;
+            width: 200px;
+            transition: 0.3s;
+            overflow: hidden;
+            position: relative;
+        }
+        .character img {
+            width: 100%;
+            border-radius: 5px;
+            animation: floatAnimation 4s infinite alternate ease-in-out;
+        }
+        .character:hover img {
+            transform: scale(1.2);
+        }
+
+        /* Анімація руху */
+        @keyframes floatAnimation {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-10px); }
+        }
+
+        /* Меню зброї */
+        .weapon-menu {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .weapon-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .weapon {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border: 2px solid #d4af37;
+            border-radius: 10px;
+            width: 250px;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .weapon img {
+            width: 100%;
+            border-radius: 5px;
+            animation: weaponFloat 3s infinite alternate ease-in-out;
+        }
+
+        /* Анімація руху зброї */
+        @keyframes weaponFloat {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-15px); }
+        }
+
+        /* Секція ворогів */
+        .boss-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .boss-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .boss {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border: 2px solid #d4af37;
+            border-radius: 10px;
+            width: 250px;
+            transition: 0.3s;
+            overflow: hidden;
+            position: relative;
+        }
+        .boss img {
+            width: 100%;
+            border-radius: 5px;
+            animation: floatAnimation 4s infinite alternate ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ласкаво просимо у світ Elden Ring</h1>
+        <p>Чи готовий ти ступити на шлях Безсмертного Короля?</p>
+    </div>
+
+    <!-- Галерея персонажів -->
+    <div class="gallery">
+        <div class="character">
+            <img src="https://preview.redd.it/maliketh-the-black-blade-artist-v0-qno2qgrfebw81.jpg?width=1080&crop=smart&auto=webp&s=ed0c0d445a7821196b0641dc5837f29cdbc9fa5b" alt="Малекіт">
+            <p>Малекіт - Чорний Клинок</p>
+        </div>
+        <div class="character">
+            <img src="https://assetsio.gnwcdn.com/elden-ring-general-radahn-boss-strategy-location.jpg?width=690&quality=70&format=jpg&dpr=2&auto=webp" alt="Радан">
+            <p>Генерал Радан</p>
+        </div>
+        <div class="character">
+            <img src="https://assetsio.gnwcdn.com/elden-ring-marika-liar.jpg?width=690&quality=70&format=jpg&dpr=2&auto=webp" alt="Маріка">
+            <p>Королева Маріка</p>
+        </div>
+    </div>
+
+    <!-- Меню зброї -->
+    <div class="weapon-menu">
+        <h2>🗡️ Легендарна зброя Elden Ring</h2>
+        <div class="weapon-container">
+            <div class="weapon">
+                <img src="https://img.rankedboost.com/wp-content/plugins/elden-ring/assets/weapons/Dark%20Moon%20Greatsword.png" alt="Місячний Великий Меч">
+                <p><strong>Місячний Великий Меч</strong></p>
+            </div>
+            <div class="weapon">
+                <img src="https://eldenring.wiki.fextralife.com/file/Elden-Ring/rivers_of_blood_katana_weapon_elden_ring_wiki_guide_200px.png" alt="Ріки Крові">
+                <p><strong>Ріки Крові</strong></p>
+            </div>
+            <div class="weapon">
+                <img src="https://eldenring.wiki.fextralife.com/file/Elden-Ring/blasphemous_blade_weapon_elden_ring_wiki_guide_200px.png" alt="Богохульний Клинок">
+                <p><strong>Богохульний Клинок</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="boss-section">
+        <h2>⚔️ Найнебезпечніші вороги</h2>
+
+        <h3>🛡️ Слабкі вороги</h3>
+        <div class="boss-container">
+            <div class="boss">
+                <img src="https://preview.redd.it/finalized-the-true-soldier-of-god-rick-run-v0-bp5cyw7n7sia1.jpg?width=640&crop=smart&auto=webp&s=0006d01c7658de908eadb7a5aa738acdeff4b713" alt="Солдат Годріка">
+                <p><strong>Солдат Годріка</strong></p>
+            </div>
+            <div class="boss">
+                <img src="https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished-knight-2-enemy-elden-ring-wiki.jpg" alt="Лицар Банші">
+                <p><strong>Лицар Банші</strong></p>
+            </div>        
+        </div>
+
+        <h3>⚔️ Середні вороги</h3>
+        <div class="boss-container">
+            <div class="boss">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTijxDaC0x9L9czqZf8dCnc-nSVcBcVgm6KTg&s" alt="Королівський Лицар Лоретта">
+                <p><strong>Королівський Лицар Лоретта</strong></p>
+            </div>
+            <div class="boss">
+                <img src="https://ua.egw.news/uploads/content/1/17/1718179126904_resized.webp" alt="Лицар Крусібл">
+                <p><strong>Лицар Крусібл</strong></p>
+            </div>
+        </div>
+
+        <h3>🔥 Сильні вороги</h3>
+        <div class="boss-container">
+            <div class="boss">
+                <img src="https://images.prom.ua/6175914762_w600_h600_6175914762.jpg" alt="Маленія">
+                <p><strong>Маленія, Клинок Мікелли</strong></p>
+            </div>
+            <div class="boss">
+                <img src="https://www.gaming.net/wp-content/uploads/2022/04/Godrick-the-Grafted-1.jpg" alt="Годрік">
+                <p><strong>Годрік Прищеплений</strong></p>
+            </div>
+            <div class="boss">
+                <img src="https://cdn1.ozone.ru/s3/multimedia-1-0/7080504552.jpg" alt="Могвін">
+                <p><strong>Могвін, Володар Крові</strong></p>
+            </div>
+        </div>            
+    </div>
+</body>
+</html>
